@@ -1,0 +1,36 @@
+1. gcc man page:
+
+a. gcc -c hello.c: This command is used to commit the "hello.c" file without linking it. Although the assembly of code is done. The output file is created as hello.o
+b. gcc -S hello.c: This command is used to stop after commit stage of "hello.c". Assembly is not completed at this point. The output is the file hello.s
+c. gcc -E hello.c: This command stop the gcc cycle of "hello.c" at preprocessing stage. It returns that preprocessed source code of "hello.c"
+d. gcc hello.c -o hello: -o flag is set to declare the name of the output file. That mean instead of creating a.out file which is default, it creates "hello" file which can be executed by ./hello
+e. gcc -v: This command is used to print the specifications of gcc in terminal including their version.
+
+2. Vim man page:
+
+a. vim -e: This command is used to degrade vim version to vi. YOu can use visual to move back ti vim version
+b. vim -R: This command is used to read a file in read only mode. It gives a warning when tried to write.
+c. :wq!,:wq,:x : All these commands are used to store the changes made in the file and store them.
+d. :q! : This command is used to save the file ignoring any made changes
+e. :q : This commands save the file and quit if no changes are made.
+f. i: It is used to insert before the cursor.
+g. I: This commands help move the cursor to starting of the line.
+h. a: It is used to append text after cursor.
+i. A: To write after the line.
+j. o: New line after current line.
+h. O: New line before current line.
+i. r: Replace one character.
+j. R: It replaces multiple characters until escape is not pressed.
+
+3. Normal linux commands:
+
+a. ls: ls commands are used to list all the directories and file under the present working directory.
+b. pwd: This command is used to tell the name of the present working directory.
+c. ls -a: Flag "-a" helps the command to display all the files, even which are hidden
+d. ls -l: Flag "-l" helps the command to display all the information about the file including their permissions.
+e. ls -al: Flag '-al' does the combined work ofk of '-a' and '-l' flag.
+f. cd: This command is used to change the present working directory.
+g. cd ..: This command is used to move back one directory.
+h. cd #,cd: These commands are used to home directory.
+i. mkdir: This command is used to create a new directory in the pwd.
+j. mkdir C -m: This command is used to set permissions for "c" like chmod.
