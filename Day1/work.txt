@@ -1,14 +1,14 @@
 1. gcc man page:
 
-a. gcc -c hello.c: This command is used to commit the "hello.c" file without linking it. Although the assembly of code is done. The output file is created as hello.o
-b. gcc -S hello.c: This command is used to stop after commit stage of "hello.c". Assembly is not completed at this point. The output is the file hello.s
+a. gcc -c hello.s: This command is used to commit the "hello.s" file without linking it. Although the assembly of code is done. The output file is created as hello.o
+b. gcc -S hello.i: This command is used to stop after commit stage of "hello.i". Assembly is not completed at this point. The output is the file hello.s
 c. gcc -E hello.c: This command stop the gcc cycle of "hello.c" at preprocessing stage. It returns that preprocessed source code of "hello.c"
 d. gcc hello.c -o hello: -o flag is set to declare the name of the output file. That mean instead of creating a.out file which is default, it creates "hello" file which can be executed by ./hello
 e. gcc -v: This command is used to print the specifications of gcc in terminal including their version.
 
 2. Vim man page:
 
-a. vim -e: This command is used to degrade vim version to vi. YOu can use visual to move back ti vim version
+a. vim -e: This command is used to degrade vim version to vi. You can use visual to move back to vim version
 b. vim -R: This command is used to read a file in read only mode. It gives a warning when tried to write.
 c. :wq!,:wq,:x : All these commands are used to store the changes made in the file and store them.
 d. :q! : This command is used to save the file ignoring any made changes
@@ -34,3 +34,10 @@ g. cd ..: This command is used to move back one directory.
 h. cd #,cd: These commands are used to home directory.
 i. mkdir: This command is used to create a new directory in the pwd.
 j. mkdir C -m: This command is used to set permissions for "c" like chmod.
+k. rm: This command is used to remove the files but cannot remove directories.
+l. rm -r: This command can remove directories along with their content.
+m. rm -f: This command remove the file or directory without any permission.
+n. rm -rf /: One of the most dangerous commands which remove root directory without permision.
+o. cp try1.txt try2.txt: This command is used to copy data of try1.txt to try2.txt.
+p. mv: This command can be used for 2 purposes. First will bw to move the file form one directory to another. Second will be two rename them.
+q. 
