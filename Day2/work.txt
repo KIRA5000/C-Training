@@ -1,0 +1,6 @@
+% can't be used for float and double
+&& have more precedence than ||
+switch can only be used with int and char
+Precedence: Postfix>Prefix>Derefference
+In qualifiers the position can be changed with data type
+To change value of constant we can use pointers in C.
