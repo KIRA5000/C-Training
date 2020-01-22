@@ -1,0 +1,4 @@
+In switch any statement written outside the cases is automatically ignored by the compiler.
+While and do while loop can not work without any condition.(shows error)
+We can interchange position of for conditions with one another.
+
