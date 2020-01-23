@@ -3,17 +3,33 @@ void palin(int no)
 {
 	int n=no;
 	int rev=0;
-	while(no!=0)
+	int status=1;
+	for(int i=2;i<no;i++)
 	{
-		rev+=no%10;
-		rev*=10;
-		no/=10;
+		if(no%i==0)
+		{
+			status=0;
+			break;
+		}
 	}
-	rev/=10;
-	if(rev==n)
-		printf("It's a palindrome\n");
+	if(status==1)
+	{
+		while(no!=0)
+		{
+			rev+=no%10;
+			rev*=10;
+			no/=10;
+		}
+		rev/=10;
+		if(rev==n)
+			printf("It's a palprime\n");
+		else
+			printf("It's not a palprime\n");
+	}
 	else
-		printf("It's not a palindrome\n");
+	{
+		printf("It's not a palprime\n");
+	}
 }
 int main()
 {
