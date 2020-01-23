@@ -1,0 +1,3 @@
+In call by refference gcc supports * whereas others support &.
+Library functions only have prototypes, there definations is mostly stored in .c files like libc.c.
+
