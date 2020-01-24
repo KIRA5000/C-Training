@@ -8,4 +8,6 @@ The code is stored in RAM:
 5. heap: Heap stores all the variable that are dynamically memory allocated.
 6. text: Text stores the code.
 
+In C you can also declare functions as static, by default they can be accesed from any where, by making them static they can only be accessed by that file only.
+
 

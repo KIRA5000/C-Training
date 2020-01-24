@@ -20,7 +20,7 @@ void cmp(char *str1,char *str2)
 		if(str1[i]!='\0')
 			result=str1[i];
 		else
-			result=str2[i];
+			result=-str2[i];
 	}
 	printf("Your comparision is:%i\n",result);
 }
