@@ -1,0 +1,11 @@
+Only .exe files are stored in the harddisk.
+
+The code is stored in RAM:
+1. cmd argument: Command line arguments are stored here.
+2. stack: Variables,addresses are stored here.
+3. potential gap: A gap in case dat or stack size increases based on program.
+4. data(BSS/non BSS): All global and extern variables are stored here. BSS stands for Block Static with Symbol. BSS is for uninitialized. non-BSS is for initialized.
+5. heap: Heap stores all the variable that are dynamically memory allocated.
+6. text: Text stores the code.
+
+
