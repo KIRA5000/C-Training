@@ -1,0 +1,11 @@
+In register storage class you can not used & because it does not have any memory location.
+You can not initialize extern variables.
+You can also create a function as extern.
+You can't have a pointer pointing to register variable.
+You can also declare a function inside main().
+You can't declare array of zero or negetive size.
+As 1D array is stored in linear row form, 2D arrays can be saved by two methods: Row Major, Collumn Major.
+Nested function is supported in C.
+Static variables have internal linkage.
+In caser of extern variable if prior linkage in visible that the later linkage is same as prior linkage.
+If a translation unit have a same identifier with both internal and external linkage then the behaviour of code is undefined.
