@@ -5,7 +5,6 @@ void add(int arr1[][100],int arr2[][100],int n)
         for(int i=0;i<n;i++)
         {
 		int sum=0;
-		int loc;
 		int k=0;
                 for(int j=0;j<n;j++)
                 {
@@ -19,7 +18,7 @@ void add(int arr1[][100],int arr2[][100],int n)
 			arr3[i][j]=sum;
                 }
         }
-        printf("Your matrix sum is:\n");
+        printf("Your matrix product is:\n");
         for(int i=0;i<n;i++)
         {
                 for(int j=0;j<n;j++)

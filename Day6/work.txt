@@ -9,3 +9,5 @@ Nested function is supported in C.
 Static variables have internal linkage.
 In caser of extern variable if prior linkage in visible that the later linkage is same as prior linkage.
 If a translation unit have a same identifier with both internal and external linkage then the behaviour of code is undefined.
+In 2D array it is important to declare collumn size while passing because array decays to pointer.
+
