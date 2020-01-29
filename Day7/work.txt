@@ -1,0 +1,1 @@
+<math.h> is not included by default in compiler so gcc uses -lm to include it.

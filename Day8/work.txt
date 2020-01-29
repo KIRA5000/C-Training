@@ -1,0 +1,11 @@
+#define print(a) #a
+In the above defination # is a stringizing operator that means #a is equivalent to "a" that means
+
+#define print(a) #a
+void main()
+{
+printf(print(a)) 
+}
+prints 'a' as an output.
+
+# and ## operators can only be entered with help of macros ie #define.
