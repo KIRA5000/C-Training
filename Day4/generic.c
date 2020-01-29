@@ -5,11 +5,6 @@ void genric(int no)
 	int i=0;
 	while(sum>=10)
 	{
-		if(i==0)
-		{
-			sum=0;
-			i++;
-		}
 		sum=0;
 		while(no>0)
 		{
