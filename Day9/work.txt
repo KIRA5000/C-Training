@@ -1,0 +1,25 @@
+If pointer type is not as same as pointed variable type, it runs but gives a warning of compatible data type.
+
+There are two types of address virtual and physical.
+Virtual Address is a address provided by the compiler.
+Physical address is the address which is provided by the OS.
+
+Pointer type if larger than variable than ---> Segmentation fault.
+
+Rules of Arithematic operations on Pointer:
+1. Data Types and Pointers Type should be same.
+2. Pointer should only roam in range of data structure.
+
+Goto statement uses pointers.
+
+Void pointers can point to any of data type.
+It is represented by void *ptr;
+You can not derrefernce void pointer.
+You have to perform type conversion while derrefencing void pointers.
+GCC allows arithematic operations on void ptr but it may not be same for other compilers.
+
+Difference between pointers and array is that pointer is a variable so pa=a and pa++ is valid but array name is not variable so a=pa and a++ is not elligible.
+
+It is possible to pass part of array to function by fun(&a[i]). Then if you are sure that there are elements behind than you can use them by a[-1].
+
+

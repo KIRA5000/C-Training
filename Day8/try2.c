@@ -8,8 +8,7 @@ int main()
 	int i=0;
 	while(name[i]!='\0')
 	{
-	if(loop==0)
-	{
+	
 		for(int l=0;l<=3;l++)
 		{
 			for(int j=0;j<l;j++)
@@ -20,10 +19,7 @@ int main()
 			if(name[i]=='\0')
 				goto end;
 		}
-		loop=1;
-	}
-	else
-	{
+	
 		for(int l=2;l>0;l--)
 		{
 			for(int j=0;j<l;j++)
@@ -35,8 +31,6 @@ int main()
                                 goto end;
 
 		}
-		loop=0;
-	}
 	}
 end:
 	return 0;
