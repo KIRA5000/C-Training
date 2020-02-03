@@ -29,7 +29,7 @@ B. NULL
 C. error
 D. Compile time error
 
-Answer: c
+Answer: b
 
 3.#include <stdio.h>
 int main()
@@ -84,7 +84,7 @@ int main()
     return 0;
 }
 
-     Options:
+Options:
 A. -126
 B. Run Time Error 
 C. Garbage value
@@ -111,7 +111,7 @@ B. Compilation Error
 C. Runtime error
 D. Linker Error
 
-Answer: b
+Answer: a
 
 7. #include<stdio.h>
 int main()
@@ -164,7 +164,7 @@ B. Compile time error
 C. Run time error
 D. 0
 
-Answer: a
+Answer: b
 
 10. #include <stdio.h>
 int main()
