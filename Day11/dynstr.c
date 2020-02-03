@@ -13,7 +13,6 @@ int main()
 	while(check!=10)
 	{
 		str=(char *)realloc(str,(t+1));
-		printf("%p\n",str);
 		str[i++]=s;
 		scanf("%c",&s);
 		t++;
