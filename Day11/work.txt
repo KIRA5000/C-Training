@@ -1,0 +1,186 @@
+1.#include<stdio.h>
+int main(){
+     char *ptr = "void pointer";
+     void *vptr;
+     vptr = &ptr;
+     printf("%s" , ?);
+     return 0;
+}
+Options:
+A. *(char **)vptr
+B. (char **)vptr
+C. *(char *)vptr 
+D. (char *)vptr
+
+Awnser: c
+
+2.#include<stdio.h>
+#define NULL "error";
+int main()
+{
+     char *ptr = NULL;
+     printf("%s",ptr);
+     return 0;
+}
+
+Options:
+A. Run time error 
+B. NULL 
+C. error
+D. Compile time error
+
+Answer: c
+
+3.#include <stdio.h>
+int main()
+{
+    float arr[5] = {12.5, 10.0, 13.5, 90.5, 0.5};
+    float *ptr1 = &arr[0];
+    float *ptr2 = ptr1 + 3;
+ 
+    printf("%f ", *ptr2);
+    printf("%d", ptr2 - ptr1);
+ 
+   return 0;
+}
+    Options:
+A. 90.500000 3
+B. 90.500000 12
+C. 10.000000 12
+D. 0.500000 3
+
+Answer: b
+
+4. #include<stdio.h>
+void f(int *p, int *q)
+{
+  p = q;
+  *p = 2;
+}
+int i = 0, j = 1;
+int main()
+{
+  f(&i, &j);
+  printf("%d %d n", i, j);
+  getchar();
+  return 0;
+}
+
+Options:
+A. 2 2
+B. 0 2 
+C. 0 1
+D. 0 2
+
+Answer: d
+
+5. #include<stdio.h>
+int main()
+{
+    int a = 130;
+    char *ptr;
+    ptr = (char *)&a;
+    printf("%d ",*ptr);
+    return 0;
+}
+
+     Options:
+A. -126
+B. Run Time Error 
+C. Garbage value
+D. Compile Time Error
+
+Answer: d
+
+6. #include<stdio.h>
+int main()
+{
+    int i = 3;
+    int *j;
+    int **k;
+    j = &i;
+    k = &j;
+    k++;
+    printf("%d ",**k);
+    return 0;
+}
+
+     Options: 
+A. Garbage value
+B. Compilation Error 
+C. Runtime error
+D. Linker Error
+
+Answer: b
+
+7. #include<stdio.h>
+int main()
+{
+    int i = 3;
+    int *j;
+    j = &i;
+    j++;
+    printf("%d ",*j);
+    return 0;
+}
+  Options:
+A. Linker Error 
+B. Run time error 
+C. Compilation Error 
+D. Garbage value
+
+Answer: d
+
+8.  #include<stdio.h>
+#include<string.h>
+int main()
+{
+    char a = 30, b = 5;
+    char *p = &a, *q = &b;
+    printf("%d", p - q);
+    return 0;
+}
+  Options:
+A. 1
+B. Run time error
+C. Compilation Error
+D. 25
+
+Awnser: b
+
+9. #include<stdio.h>
+int main()
+{
+    int a = 12;
+    void *ptr = (int *)&a;
+    printf("%d", *ptr);
+    getchar();
+    return 0;
+}
+
+Options:
+A. 12
+B. Compile time error
+C. Run time error
+D. 0
+
+Answer: a
+
+10. #include <stdio.h>
+int main()
+{
+    int arr[] = {1, 2, 3, 4, 5};
+    int *p = arr;
+    ++*p;
+    p += 2;
+    printf("%d", *p);
+    return 0;
+}
+
+Options:
+A. 2
+B. 3
+C. 4
+D. Compile Error
+
+Answer: b
