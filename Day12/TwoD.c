@@ -40,5 +40,6 @@ int main()
 	}
 	enter(arr,row,col);
 	print(arr,row,col);
+	free(arr);
 	return 0;
 }
