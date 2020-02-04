@@ -20,5 +20,6 @@ int main()
 	}
 	printf("Your string size is:%ld\n",strlen(str));
 	printf("Your string is:%s\n",str);
+	free(str);
 	return 0;
 }
