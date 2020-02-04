@@ -3,13 +3,13 @@
 #include<string.h>
 int main()
 {
-	char *str=(char *)malloc(2);
+	char *str=(char *)malloc(1);
 	int i=0;
-	int t=2;
+	int t=1;
 	char s;
 	printf("Enter a string\n");
 	scanf("%c",&s);
-	int check=0;
+	int check=s;
 	while(check!=10)
 	{
 		str=(char *)realloc(str,(t+1));
