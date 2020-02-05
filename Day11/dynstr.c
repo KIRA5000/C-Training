@@ -18,7 +18,7 @@ int main()
 		t++;
 		check=s;
 	}
-	printf("Your string size is:%ld\n",strlen(str));
+	printf("Your string size is:%i\n",t);
 	printf("Your string is:%s\n",str);
 	free(str);
 	return 0;
