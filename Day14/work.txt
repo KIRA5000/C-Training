@@ -1,0 +1,7 @@
+The most common problem with macros in c is that it doesn't check data type before operating, so we can use _Generic function.
+Float are approximately stored in compilers so that it can represent infinite number of bits in finite number.
+In C if function doesn't have any parameters that it can be called by any number of parameters. so defining by int fun(void) mean it can only be called if no arguments are passed. It's not like this in C++ so int fun() and int fun(void) are same in C++.
+We can not use any data type modifiers with float and only long is allowed with double.
+In printf there is a data type specifier %n that counts the number of characters printed before it and store it in next vairable.
+You can't use same scope in two different enums, it gives compilation error.
+You can do designated analysis of struct values: struct hello p={.y=1,.x=2,.z=9};
