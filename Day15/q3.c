@@ -17,7 +17,7 @@ int main(void)
 		printf("Enter elements of array\n");
 		for(int j=0;j<demo[i].n;j++)
 		{
-			scanf("%d",&(demo[i].arr[j]));
+			scanf("%d",&((demo+i)->arr[j]));
 		}
 	}
 	printf("Your elements which are divisible by 2 are:\n");
