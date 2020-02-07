@@ -5,3 +5,6 @@ We can not use any data type modifiers with float and only long is allowed with 
 In printf there is a data type specifier %n that counts the number of characters printed before it and store it in next vairable.
 You can't use same scope in two different enums, it gives compilation error.
 You can do designated analysis of struct values: struct hello p={.y=1,.x=2,.z=9};
+static members are not allowed in struct.
+Structure can not be compared with one another.
+
