@@ -1,0 +1,1 @@
+if(0),if(1),.. and so on only works in C language because C doesn't support boolean, other languages show error of incompatible data type.
