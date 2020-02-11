@@ -1,6 +1,7 @@
 In structure there is a concept of structure object padding.
 This concept is used by compiler to increase the fetching speed of the data type by simply compromising space complexity.
-What compiler does here is that compiler while fetching data from structure fetches data based on the word size provided by the compiler thay is 4 byte for 32-bit processor and 8byte for 64-bit processor.
+What compiler does here is that compiler while fetching data from structure fetches data based on the word size provided by the compiler
+that is 4 byte for 32-bit processor and 8byte for 64-bit processor.
 
 That means in below example:
 struct demo
@@ -14,8 +15,12 @@ ie sizeof(demo)-->8
 
 So to minimize the space complexity damage it is a good practice that smaller data types should be written above larger data types.
 
-Padding can also be reduced by another concept:#pragma pack a<------(a: 1,2,4,8,16)
+Padding can also be reduced by another concept:#pragma pack(a)<------(a: 1,2,4,8,16)
 
 Any other value for a will not execute #pragma pack.
 
+Pragma and __attribute__(()) are compiler dependent operators which are used to turn on or turn off some features which are defined in C.
 
+#pragma startup and exit doesn't work in gcc so need to use __attribute__((constructor)) and __attribute__(destructor)) instead.
+
+#pragma warn -rvl (for return value), -par (for parameter), -rch (for unreachable code) //gcc doesn't display warning for these anyway.
