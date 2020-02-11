@@ -1,0 +1,21 @@
+In structure there is a concept of structure object padding.
+This concept is used by compiler to increase the fetching speed of the data type by simply compromising space complexity.
+What compiler does here is that compiler while fetching data from structure fetches data based on the word size provided by the compiler thay is 4 byte for 32-bit processor and 8byte for 64-bit processor.
+
+That means in below example:
+struct demo
+{
+int i;
+char ch;
+}dobj;
+
+char has been provided 4 bytes rather than one in which 3 bytes have been padded and therefore is not accessible.
+ie sizeof(demo)-->8
+
+So to minimize the space complexity damage it is a good practice that smaller data types should be written above larger data types.
+
+Padding can also be reduced by another concept:#pragma pack a<------(a: 1,2,4,8,16)
+
+Any other value for a will not execute #pragma pack.
+
+
