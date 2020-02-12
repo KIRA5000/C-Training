@@ -5,41 +5,36 @@ struct node
         int data;
         struct node *next;
 };
-struct node* enter(struct node *head,int data)
+struct node *head=NULL;
+struct node *tail=NULL;
+void enter(int data)
 {
         if(head==NULL)
         {
                 head=(struct node*)malloc(sizeof(struct node));
+		tail=(struct node *)malloc(sizeof(struct node));
                 head->data=data;
                 head->next=NULL;
+		tail=head;
         }
         else
         {
-		struct node *curr=head;
-		while(curr->next!=NULL)
-                {
-                        curr=curr->next;
-                }
                 struct node *new_data=(struct node*)malloc(sizeof(struct node));
                 new_data->data=data;
                 new_data->next=NULL;
-                curr->next=new_data;
+                tail->next=new_data;
+		tail=new_data;
         }
-        return head;
 }
-struct node* delete(struct node *head)
+void delete()
 {
-	if(head==NULL||head->next==NULL)
-	{
-		return NULL;
-	}
+	if(head==NULL||head->next==NULL);
 	else
 	{
 		head=head->next;
 	}
-	return head;
 }
-void print(struct node *head)
+void print()
 {
         struct node* curr=head;
         while(curr!=NULL)
@@ -52,6 +47,7 @@ void print(struct node *head)
 int main()
 {
         struct node *head=NULL;
+	struct node *tail=NULL;
         int data;
 	printf("What do you wanna do in stack:\n");
         printf("1. Input\n");
@@ -67,12 +63,12 @@ int main()
 		{
 			printf("Enter data in linked list\n");
                 	scanf("%i",&data);
-                	head=enter(head,data);
+                	enter(data);
 		}
 		else if(y==2)
-			head=delete(head);
+			delete();
 		else if(y==3)
-			print(head);
+			print();
 		//printf("What's next?\n");
         }while(y!=4);
         return 0;
