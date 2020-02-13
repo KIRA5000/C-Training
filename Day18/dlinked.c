@@ -38,6 +38,7 @@ void print(struct node* head)
 		printf("%d ",curr->data);
 		curr=curr->front;
 	}
+	free(curr);
 	printf("\n");
 }
 void revprint(struct node *head)
@@ -52,6 +53,7 @@ void revprint(struct node *head)
 		printf("%d ",curr->data);
 		curr=curr->back;
 	}
+	free(curr);
 	printf("\n");
 }
 int main()
@@ -83,5 +85,17 @@ int main()
 			revprint(head);
 		}
 	}
+	struct node *curr=NULL;
+	while(head!=NULL)
+	{
+		curr=head;
+		head=head->front;
+		free(curr);
+	}
+	free(head);
+	if(head==NULL)
+		printf("HEAD\ncurr:%p",curr);
+	if(curr==NULL)
+		printf("CURR\n");
 	return 0;
 }
