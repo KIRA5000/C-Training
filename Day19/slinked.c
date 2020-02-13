@@ -198,6 +198,7 @@ int main()
 				head=binsert(head,data);
 				printf("Data has been added\n");
 				getchar();
+				getchar();
 				system("clear");
 			}
 			else if(choice==2)
@@ -211,6 +212,7 @@ int main()
 				head=minsert(head,data,loc);
 				printf("Data has been added\n");
 				getchar();
+				getchar();
 				system("clear");
 			}
 			else if(choice==3)
@@ -220,6 +222,7 @@ int main()
                                 head=insert(head,data);
                                 printf("Data has been added\n");
                                 getchar();
+				getchar();
                                 system("clear");
 			}
 		}
@@ -237,6 +240,7 @@ int main()
                                 head=bdelete(head);
                                 printf("Your Data has been Deleted\n");
                                 getchar();
+				getchar();
                                 system("clear");
                         }
                         else if(choice==2)
@@ -248,6 +252,7 @@ int main()
                                 head=mdelete(head,loc);
                                 printf("Data has been delete\n");
                                 getchar();
+				getchar();
                                 system("clear");
                         }
                         else if(choice==3)
@@ -255,6 +260,7 @@ int main()
                                 head=delete(head);
                                 printf("Data has been deleted\n");
                                 getchar();
+				getchar();
                                 system("clear");
                         }
 		}
