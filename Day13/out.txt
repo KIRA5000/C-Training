@@ -1,0 +1,3 @@
+Enter you string
+Max length:-2147483648
+Min length:2147483647

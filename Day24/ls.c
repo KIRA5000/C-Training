@@ -1,5 +1,6 @@
 #include<dirent.h>
 #include<stdio.h>
+#include<unistd.h>
 int main(int argc, char** argv)
 {
 	DIR *dp;
@@ -18,7 +19,7 @@ int main(int argc, char** argv)
 		dp=opendir(argv[1]);
 		if(dp==NULL)
 		{
-			printf("Enter a valid directory pathway\n");
+			fprintf(stderr,"Enter a valid directory pathway\n");
 		}
 		else
 		{

@@ -11,7 +11,7 @@ int main(int argc,char **argv)
 	else
 	{
 		val=fcntl(atoi(argv[1]),F_GETFL,0);
-		printf("Your flag numerically is:%d",val);
+		printf("Your flag numerically is:%o\n",val);
 		if((val & O_ACCMODE)==O_RDONLY)
 		{
 			printf("Read only");
@@ -27,6 +27,10 @@ int main(int argc,char **argv)
 		if(val & O_APPEND)
 		{
 			printf(", append");
+		}
+		else
+		{
+			printf(", not append");
 		}
 		printf("\n");
 	}

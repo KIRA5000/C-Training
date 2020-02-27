@@ -4,8 +4,10 @@
 #include<string.h>
 #include<fcntl.h>
 #include<errno.h>
+#include<pwd.h>
 int main(int argc,char **argv)
 {
+	struct passwd *pwd;
 	DIR* dr;
 	struct dirent *dirp;
 	struct stat st;
@@ -61,7 +63,8 @@ int main(int argc,char **argv)
                                                 else
                                                         printf("-");
 					}
-					printf(" %-10o %-10d %-10d %-10ld %s\n",st.st_mode,st.st_uid,st.st_gid,st.st_size,dirp->d_name);
+					pwd=getpwuid(st.st_uid);
+					printf(" %-10o %-10s %-10ld %s\n",st.st_mode,pwd->pw_name,st.st_size,dirp->d_name);
 				}
 			}
 		}
