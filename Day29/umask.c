@@ -10,7 +10,7 @@ int main(int argc,char** argv)
 	}
 	else
 	{
-		umask(0022);
+		umask(0023);
 		if(creat(argv[1],0777)!=-1)
 		{
 			printf("File created\n");
